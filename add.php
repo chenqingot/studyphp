@@ -20,6 +20,6 @@ $result = mysql_query("SELECT * FROM article");
 
 while($row=mysql_fetch_array($result)){
   $array[] = $row;
-  echo json_encode($array, JSON_FORCE_OBJECT);
+  echo json_encode($array);
 }
 ?>
