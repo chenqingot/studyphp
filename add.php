@@ -17,7 +17,7 @@ mysql_select_db($dbname, $con);
 mysql_query($sql);
 $result = mysql_query("SELECT * FROM article");
 while($row=mysql_fetch_array($result)){
-  echo $row['title'].' '.$row['content'].' '.$row['category'];
+  echo $row['id'].' '.$row['title'].' '.$row['content'].' '.$row['category'];
   echo "<br />";
 }
 ?>
