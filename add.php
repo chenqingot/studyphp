@@ -9,17 +9,19 @@ $dbname = "test";
 // $category = $_POST["category"];
 $array = array();
 
-// $sql = "INSERT INTO article(title,content,category) values('".$title."','".$content."','".$category."')";
+//$sql = "INSERT INTO article(title,content,category) values('".$title."','".$content."','".$category."')";
 $con = mysql_connect($servername, $username, $password);
 if (!$con){
   die('Could not connect: ' . mysql_error());
 }
 mysql_select_db($dbname, $con);
-// mysql_query($sql);
+mysql_query($sql);
 $result = mysql_query("SELECT * FROM article");
 
 while($row=mysql_fetch_array($result)){
   $array[] = $row;
-  echo json_encode($array);
+  //echo json_encode($array, JSON_FORCE_OBJECT);
 }
+$arr=array('name'=>'Balla_兔子','age'=>22);
+echo json_encode($arr);
 ?>
