@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+        function loadXMLDoc(url)
+        {
+            var xmlhttp;
+            if (window.XMLHttpRequest){
+                xmlhttp=new XMLHttpRequest();
+            }else{
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange=function(){
+                if (xmlhttp.readyState==4 && xmlhttp.status==200){
+                    console.log(xmlhttp.responseText);
+                }
+            }
+            xmlhttp.open("GET", url ,true);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+<body>
+
+<button type="button" onclick="loadXMLDoc('output.php')">output</button>
+<button type="button" onclick="loadXMLDoc('getAllArticle.php')">all article</button>
+
+</body>
+</html>

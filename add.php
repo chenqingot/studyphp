@@ -4,24 +4,20 @@ $servername = "127.0.0.1";
 $username = "root";
 $password = "123456";
 $dbname = "test";
-// $title = $_POST["title"];
-// $content = $_POST["content"];
-// $category = $_POST["category"];
+$title = $_POST["title"];
+$content = $_POST["content"];
+$category = $_POST["category"];
 $array = array();
 
-//$sql = "INSERT INTO article(title,content,category) values('".$title."','".$content."','".$category."')";
-$con = mysql_connect($servername, $username, $password);
+$sql = "INSERT INTO article(title,content,category) values('".$title."','".$content."','".$category."')";
+$con = mysqli_connect($servername, $username, $password, $dbname);
 if (!$con){
-  die('Could not connect: ' . mysql_error());
+  die('Could not connect: ' . mysqli_error());
 }
-mysql_select_db($dbname, $con);
-mysql_query($sql);
-$result = mysql_query("SELECT * FROM article");
+mysqli_query($con, $sql);
+$result = mysqli_query($con,"SELECT * FROM article",MYSQLI_STORE_RESULT);
 
-while($row=mysql_fetch_array($result)){
+while($row=mysqli_fetch_array($result)){
   $array[] = $row;
-  //echo json_encode($array, JSON_FORCE_OBJECT);
+  echo json_encode($array, JSON_FORCE_OBJECT);
 }
-$arr=array('name'=>'Balla_兔子','age'=>22);
-echo json_encode($arr);
-?>
