@@ -22,7 +22,7 @@ $result = mysqli_query($con,"SELECT * FROM article",MYSQLI_STORE_RESULT);
 //mysqli_fetch_assoc
 //mysqli_fetch_row
 //mysqli_fetch_array
-while($row=mysqli_fetch_row($result)){
+while($row=mysqli_fetch_assoc($result)){
     $array[] = $row;
 }
 echo json_encode($array, JSON_PRETTY_PRINT);
