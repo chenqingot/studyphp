@@ -12,6 +12,6 @@ $array = [
     'addr'=>'shanghai'
 ];
 
-$result = json_encode($array);
+$result = json_encode((object)$array);
 
 echo $result;

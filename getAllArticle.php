@@ -25,4 +25,4 @@ $result = mysqli_query($con,"SELECT * FROM article",MYSQLI_STORE_RESULT);
 while($row=mysqli_fetch_assoc($result)){
     $array[] = $row;
 }
-echo json_encode($array, JSON_PRETTY_PRINT);
+echo json_encode((object) $array, JSON_PRETTY_PRINT);
