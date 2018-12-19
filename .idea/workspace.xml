@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="262d4204-da98-4ce0-a693-b529e36b8084" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,20 +17,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="99" column="18" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="18" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="228">
+              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/general.css">
+        <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="116" column="17" selection-start-line="116" selection-start-column="17" selection-end-line="116" selection-end-column="17" />
+            <state relative-caret-position="209">
+              <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -42,8 +41,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/css/index.css" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/general.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/header.php" />
       </list>
     </option>
   </component>
@@ -53,10 +53,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="49" />
-    <option name="y" value="35" />
-    <option name="width" value="2461" />
-    <option name="height" value="1311" />
+    <option name="x" value="3036" />
+    <option name="y" value="-12" />
+    <option name="width" value="1407" />
+    <option name="height" value="750" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -115,18 +115,19 @@
       <workItem from="1545059981624" duration="23000" />
       <workItem from="1545060858255" duration="751000" />
       <workItem from="1545099689241" duration="638000" />
-      <workItem from="1545142268739" duration="6631000" />
+      <workItem from="1545142268739" duration="7496000" />
+      <workItem from="1545211243469" duration="733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9425000" />
+    <option name="totallyTimeSpent" value="11023000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1477" height="797" extended-state="6" />
+    <frame x="2552" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25686136" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19722815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -189,20 +190,24 @@
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/css/general.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="99" column="18" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="1376">
+          <caret line="109" column="19" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/general.css">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="116" column="17" selection-start-line="116" selection-start-column="17" selection-end-line="116" selection-end-column="17" />
+        <state relative-caret-position="228">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>

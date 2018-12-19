@@ -10,10 +10,7 @@
     <link rel="shortcut icon" href="image/logo.ico">
 </head>
 <body>
-<div class="header">
-    <img src="image/logo.jpg" class="logo">
-    <h3 class="site-name">收藏家</h3>
-</div>
+<?php include 'header.php'; ?>
 <div class="nav">
     <div class="nav-content">
         <div class="category">最新资讯</div>
