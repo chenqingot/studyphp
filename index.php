@@ -15,9 +15,7 @@ $result3 = mysqli_query($con,"SELECT * FROM article where category=3",MYSQLI_STO
 $result4 = mysqli_query($con,"SELECT * FROM article where category=4",MYSQLI_STORE_RESULT);
 $result5 = mysqli_query($con,"SELECT * FROM article where category=5",MYSQLI_STORE_RESULT);
 $result6 = mysqli_query($con,"SELECT * FROM article where category=6",MYSQLI_STORE_RESULT);
-while($row1=mysqli_fetch_array($result1)){
-    echo '<a href="detail.php?id='.$row1['id'].'">'.$row1['title'].'</a>';
-}
+
 ?>
 
 <!DOCTYPE html>
@@ -40,9 +38,9 @@ while($row1=mysqli_fetch_array($result1)){
             最新资讯
         </div>
         <div class="list">
-            <?
-            while($row1=mysqli_fetch_array($result1)){
-                echo "<a href=detail.php?id='".$row1['id']."'>".$row1['title']."</a>";
+            <?php
+            while($row1=mysqli_fetch_assoc($result1)){
+                echo '<a href="detail.php?id='.$row1['id'].'">'.$row1['title'].'</a>';
             }
             ?>
         </div>
@@ -52,7 +50,7 @@ while($row1=mysqli_fetch_array($result1)){
             发行预告
         </div>
         <div class="list">
-            <?
+            <?php
             while($row=mysqli_fetch_array($result2)){
                 echo '<a href="detail.php?id='.$row["id"].'">'.$row["title"].'</a>';
             }
@@ -66,7 +64,7 @@ while($row1=mysqli_fetch_array($result1)){
             纪念钞
         </div>
         <div class="list">
-            <?
+            <?php
             while($row=mysqli_fetch_array($result3)){
                 echo '<a href="detail.php?id='.$row["id"].'">'.$row["title"].'</a>';
             }
@@ -78,7 +76,7 @@ while($row1=mysqli_fetch_array($result1)){
             纪念币
         </div>
         <div class="list">
-            <?
+            <?php
             while($row=mysqli_fetch_array($result4)){
                 echo '<a href="detail.php?id='.$row["id"].'">'.$row["title"].'</a>';
             }
@@ -92,7 +90,7 @@ while($row1=mysqli_fetch_array($result1)){
             第四套人民币收藏百科
         </div>
         <div class="list">
-            <?
+            <?php
             while($row=mysqli_fetch_array($result5)){
                 echo '<a href="detail.php?id='.$row["id"].'">'.$row["title"].'</a>';
             }
@@ -104,7 +102,7 @@ while($row1=mysqli_fetch_array($result1)){
             第三套人民币收藏百科
         </div>
         <div class="list">
-            <?
+            <?php
             while($row=mysqli_fetch_array($result6)){
                 echo '<a href="detail.php?id='.$row["id"].'">'.$row["title"].'</a>';
             }
