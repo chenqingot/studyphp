@@ -9,7 +9,6 @@ $con = mysqli_connect($servername, $username, $password, $DBName);
 if (!$con){
     die('Could not connect: ' . mysqli_error());
 }
-mysqli_query($con, $sql);
 $result1 = mysqli_query($con,"SELECT * FROM article where category=1",MYSQLI_STORE_RESULT);
 $result2 = mysqli_query($con,"SELECT * FROM article where category=2",MYSQLI_STORE_RESULT);
 $result3 = mysqli_query($con,"SELECT * FROM article where category=3",MYSQLI_STORE_RESULT);
