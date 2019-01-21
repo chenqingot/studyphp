@@ -29,7 +29,7 @@ $result = mysqli_query($con,$sql,MYSQLI_STORE_RESULT);
     while($row=mysqli_fetch_array($result)){
         echo '<p>标题：'.$row["title"].'</p>';
         echo '<p>正文：'.$row["content"].'</p>';
-        echo '<p>分类：'.$row["categroy"].'</p>';
+        echo '<p>分类：'.$row["category"].'</p>';
     }?>
 </div>
 <?php include 'footer.php'; ?>
