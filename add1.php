@@ -10,7 +10,7 @@ $category = $_POST["category"];
 $array = array();
 
 $sql = "INSERT INTO article(title,content,category) values('".$title."','".$content."','".$category."')";
-$con = mysqli_connect($servername, $username, $password, $dbname);
+$con = mysqli_connect($servername, $username, $password, $DBName);
 if (!$con){
   die('Could not connect: ' . mysqli_error());
 }
