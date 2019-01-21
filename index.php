@@ -42,7 +42,7 @@ while($row1=mysqli_fetch_array($result1)){
         <div class="list">
             <?
             while($row1=mysqli_fetch_array($result1)){
-                echo '<a href="detail.php?id='.$row1['id'].'">'.$row1['title'].'</a>';
+                echo "<a href=detail.php?id='".$row1['id']."'>".$row1['title']."</a>";
             }
             ?>
         </div>
