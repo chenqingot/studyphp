@@ -6,9 +6,9 @@
  * Time: 14:58
  */
 
-$servername = "127.0.0.1";
-$username = "root";
-$password = "123456";
+$servername = "120.78.200.113";
+$username = "chenqing";
+$password = "chenqing123";
 $DBName = "test";
 $array = array();
 

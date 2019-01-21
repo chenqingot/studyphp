@@ -1,9 +1,9 @@
 <?php
 
-$servername = "127.0.0.1";
-$username = "root";
-$password = "123456";
-$dbname = "test";
+$servername = "120.78.200.113";
+$username = "chenqing";
+$password = "chenqing123";
+$DBName = "test";
 $title = $_POST["title"];
 $content = $_POST["content"];
 $category = $_POST["category"];

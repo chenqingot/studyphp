@@ -11,16 +11,7 @@
 </head>
 <body>
 <?php include 'header.php'; ?>
-<div class="nav">
-    <div class="nav-content">
-        <div class="category">最新资讯</div>
-        <div class="category">发行预告</div>
-        <div class="category">纪念钞</div>
-        <div class="category">纪念币</div>
-        <div class="category">第四套人民币收藏百科</div>
-        <div class="category">第三套人民币收藏百科</div>
-    </div>
-</div>
+
 <div class="con">
     <div class="zxzx content">
         <div class="title">
@@ -72,7 +63,7 @@
 <div class="con">
     <div class="dst content" style="margin-right: 10px;">
         <div class="title">
-            第四套人民币收藏百
+            第四套人民币收藏百科
         </div>
         <div class="list">
             <p>AAAAAAAAAAAAAA</p>
@@ -83,7 +74,7 @@
     </div>
     <div class="dst content">
         <div class="title">
-            第三套人民币收藏百
+            第三套人民币收藏百科
         </div>
         <div class="list">
             <p>AAAAAAAAAAAAAA</p>
