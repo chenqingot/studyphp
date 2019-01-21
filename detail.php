@@ -25,7 +25,7 @@ $result = mysqli_query($con,$sql,MYSQLI_STORE_RESULT);
 <?php include 'header.php'; ?>
 
 <div  style="text-align: center;">
-    <?
+    <?php
     while($row=mysqli_fetch_array($result)){
         echo '<p>标题：'.$row["title"].'</p>';
         echo '<p>正文：'.$row["content"].'</p>';
