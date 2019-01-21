@@ -1,3 +1,25 @@
+<?php
+
+$servername = "120.78.200.113";
+$username = "chenqing";
+$password = "chenqing123";
+$DBName = "test";
+
+$sql = "INSERT INTO article(title,content,category) values('".$title."','".$content."','".$category."')";
+$con = mysqli_connect($servername, $username, $password, $DBName);
+if (!$con){
+    die('Could not connect: ' . mysqli_error());
+}
+mysqli_query($con, $sql);
+$result1 = mysqli_query($con,"SELECT * FROM article where category=1",MYSQLI_STORE_RESULT);
+$result2 = mysqli_query($con,"SELECT * FROM article where category=2",MYSQLI_STORE_RESULT);
+$result3 = mysqli_query($con,"SELECT * FROM article where category=3",MYSQLI_STORE_RESULT);
+$result4 = mysqli_query($con,"SELECT * FROM article where category=4",MYSQLI_STORE_RESULT);
+$result5 = mysqli_query($con,"SELECT * FROM article where category=5",MYSQLI_STORE_RESULT);
+$result6 = mysqli_query($con,"SELECT * FROM article where category=6",MYSQLI_STORE_RESULT);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,10 +40,11 @@
             最新资讯
         </div>
         <div class="list">
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
+            <?
+            while($row=mysqli_fetch_array($result1)){
+                echo '<a href="detail.php?id='.$row["id"].'">'.$row["title"].'</a>';
+            }
+            ?>
         </div>
     </div>
     <div class="fxyg content">
@@ -29,10 +52,11 @@
             发行预告
         </div>
         <div class="list">
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
+            <?
+            while($row=mysqli_fetch_array($result2)){
+                echo '<a href="detail.php?id='.$row["id"].'">'.$row["title"].'</a>';
+            }
+            ?>
         </div>
     </div>
 </div>
@@ -42,10 +66,11 @@
             纪念钞
         </div>
         <div class="list">
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
+            <?
+            while($row=mysqli_fetch_array($result3)){
+                echo '<a href="detail.php?id='.$row["id"].'">'.$row["title"].'</a>';
+            }
+            ?>
         </div>
     </div>
     <div class="jnb content">
@@ -53,10 +78,11 @@
             纪念币
         </div>
         <div class="list">
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
+            <?
+            while($row=mysqli_fetch_array($result4)){
+                echo '<a href="detail.php?id='.$row["id"].'">'.$row["title"].'</a>';
+            }
+            ?>
         </div>
     </div>
 </div>
@@ -66,10 +92,11 @@
             第四套人民币收藏百科
         </div>
         <div class="list">
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
+            <?
+            while($row=mysqli_fetch_array($result5)){
+                echo '<a href="detail.php?id='.$row["id"].'">'.$row["title"].'</a>';
+            }
+            ?>
         </div>
     </div>
     <div class="dst content">
@@ -77,17 +104,14 @@
             第三套人民币收藏百科
         </div>
         <div class="list">
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
-            <p>AAAAAAAAAAAAAA</p>
+            <?
+            while($row=mysqli_fetch_array($result6)){
+                echo '<a href="detail.php?id='.$row["id"].'">'.$row["title"].'</a>';
+            }
+            ?>
         </div>
     </div>
 </div>
-
-<div class="footer">
-    <p>关于我们 | 联系我们</p>
-    <p>Copyright@1999-2012 99yq.com All Rights Reserved</p>
-</div>
+<?php include 'footer.php'; ?>
 </body>
 </html>
