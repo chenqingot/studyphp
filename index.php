@@ -15,7 +15,9 @@ $result3 = mysqli_query($con,"SELECT * FROM article where category=3",MYSQLI_STO
 $result4 = mysqli_query($con,"SELECT * FROM article where category=4",MYSQLI_STORE_RESULT);
 $result5 = mysqli_query($con,"SELECT * FROM article where category=5",MYSQLI_STORE_RESULT);
 $result6 = mysqli_query($con,"SELECT * FROM article where category=6",MYSQLI_STORE_RESULT);
-
+while($row1=mysqli_fetch_array($result1)){
+    echo '<a href="detail.php?id='.$row1['id'].'">'.$row1['title'].'</a>';
+}
 ?>
 
 <!DOCTYPE html>
