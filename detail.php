@@ -9,6 +9,7 @@ $id = $_GET["id"];
 $sql = "select * from article where id=".$id;
 $con = mysqli_connect($servername, $username, $password, $DBName);
 $result = mysqli_query($con,$sql,MYSQLI_STORE_RESULT);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
