@@ -8,6 +8,6 @@
 
 if(is_uploaded_file($_FILES['userfile']['tmp_name'])){
     echo '上传成功';
-    move_uploaded_file($_FILES['userfile']['tmp_name'],$_FILES['userfile']['name']);
+    move_uploaded_file($_FILES['userfile']['tmp_name'],'uploads/'.$_FILES['userfile']['name']);
 }
 print_r($_FILES);
